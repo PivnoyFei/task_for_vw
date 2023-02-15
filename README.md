@@ -59,9 +59,9 @@ pip install -r backend/requirements.txt
 
 ### Перед запуском сервера, в папке &lt; backend &gt; необходимо создать .env файл со своими данными. Ниже представлены параметры по умолчанию.
 ```bash
-SECRET_KEY='key'
-DEBUG='True'
-ALLOWED_HOSTS='localhost'
+SECRET_KEY='key' # Секретный ключ джанго
+DEBUG='True' # Режим разработчика
+ALLOWED_HOSTS='localhost' # Адрес
 
 DB_ENGINE='django.db.backends.sqlite3'
 DB_NAME='db.sqlite3' # имя БД
@@ -107,7 +107,7 @@ python manage.py runserver
 
 #### При первом запуске парсера потребует ввести номер телефона и код из телеграм:
 
-Теперь по адресу http://localhost/admin/ доступна админка.
+Теперь по адресу http://localhost:8000/admin/ доступна админка.
 
 #### Автор
 [Смелов Илья](https://github.com/PivnoyFei)
